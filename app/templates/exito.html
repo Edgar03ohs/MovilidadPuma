@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>UNAM</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilosp.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Datos guardados exitosamente</h1>
+        <a href="{{ url_for('main.ver_registros') }}" class="boton">Ver Registros</a>
+        <a href="{{ url_for('main.landing_page') }}" class="boton">Inicio</a>
+
+        <button id="desktop-button">Vista de Escritorio</button><br>
+        <button id="mobile-button">Vista Móvil</button>
+    </div>
+        <!-- Pie de Página -->
+        <footer>
+            <section id="contacto">
+                <p>&copy; 2023 Movilidad Puma</p>
+            </section>
+        </footer>
+        
+        <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+</body>
+</html>

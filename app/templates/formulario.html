@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/estilos.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <div class="formulario">
+          <h2>Formulario de registro</h2>
+          <p>Por favor, complete el siguiente formulario para registrarse:</p>
+
+          <!-- Inicio del formulario -->
+          <form action="{{ url_for('main.submit_form') }}" method="POST">
+
+          <!-- Campo de Nombre -->
+          <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <!-- Campo de Apellido -->
+          <div>
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required>
+          </div>
+
+          <!-- Campo de Correo Electrónico -->
+          <div>
+              <label for="correo">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+
+          <!-- Campo de Contraseña -->
+          <div>
+              <label for="contrasena">Contraseña:</label>
+              <input type="password" id="contrasena" name="contrasena" minlength="8" required>
+          </div>
+
+          <!-- Selección de tipo de usuario -->
+          <label><a>Usuario:</a></label>
+          <input type="radio" id="Pasajero" name="usuario" value="Pasajero" required>
+          <label for="Pasajero">Pasajero</label>
+          <input type="radio" id="coordinador" name="usuario" value="coordinador" required>
+          <label for="coordinador">Coordinador</label><br>
+
+          <!-- Botón de Enviar -->
+          <div>
+              <button type="submit">Enviar</button><br>
+          </div>
+          </form>
+
+          <!-- Fin del formulario -->          
+      </div>
+        <button id="desktop-button">Vista de Escritorio</button><br>
+        <button id="mobile-button">Vista Móvil</button>
+    </div>
+      <!-- Pie de Página -->
+      <footer>
+        <section id="contacto">
+          <p>&copy; 2023 Movilidad Puma</p>
+        </section>
+      </footer>
+      <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+</body>
+</html>

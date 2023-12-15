@@ -1,0 +1,276 @@
+/* input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total 
+} 
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}*/
+
+
+/* Estilos para el encabezado */
+header {
+    background-color: #336699; /* Cambia el color de fondo del encabezado a un tono de azul */
+    color: #FFD700; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra el texto horizontalmente en el encabezado */
+    padding: 20px; /* Agrega espacio interior alrededor del encabezado */
+}
+/* Estilos para el encabezado h1 */
+h1 {
+    font-size: 36px; /* Cambia el tamaño de la fuente del título a 36 píxeles */
+    margin: 0; /* Elimina el margen predeterminado alrededor del título */
+}
+
+/* Estilos para el párrafo del encabezado */
+header p {
+    font-size: 18px; /* Cambia el tamaño de la fuente del párrafo a 18 píxeles */
+    margin-top: 10px; /* Agrega espacio superior al párrafo para separarlo del título */
+}
+
+/* Estilos para la barra de navegación */
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0%;
+    height: 60px;
+    text-align: center;
+}
+
+/* Estilos para los elementos de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    width: 80%;
+}
+
+/* Estilos para los enlaces de navegación */
+nav ul li {
+    position: relative;
+    width: 100%;
+}
+
+nav ul li a {
+    padding-left: 40%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilos para el fondo en hover */
+nav ul li:hover {
+    background-color: #565555; /* Color de fondo al hacer hover */
+}
+
+/* Estilos para el texto en hover */
+nav ul li a:hover {
+    color: #ffbf00;
+}
+
+
+/* Estilos para párrafos */
+p {
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    line-height: 1.5; /* Controla el espaciado entre líneas */
+}
+
+/* Estilos para la caja */
+.caja {
+    background-color: #F2EFE9; /* Cambia el color de fondo de la caja */
+    border: 1px solid #D1C7AC; /* Agrega un borde a la caja */
+    padding: 10px; /* Agrega espacio interior a la caja */
+}
+
+/* Estilos para la lista no ordenada */
+ul {
+    list-style-type: square; /* Cambia el estilo de viñetas */
+}
+/* Estilos para el contenido principal */
+main {
+    margin: 20px; /* Agrega espacio alrededor del contenido principal */
+}
+/* Estilos para las secciones */
+section {
+    margin-bottom: 30px; /* Agrega espacio inferior entre las secciones */
+}
+
+/* Estilos para los títulos de sección */
+section h2 {
+    font-size: 24px; /* Cambia el tamaño de la fuente de los títulos de sección a 24 píxeles */
+    color: #333; /* Cambia el color del texto de los títulos de sección a un tono oscuro */
+}
+
+section h2 ul li{
+    font-size: 26px; /* Cambia el tamaño de la fuente de los títulos de sección a 24 píxeles */
+    color: #333; /* Cambia el color del texto de los títulos de sección a un tono oscuro */
+}
+
+/* Estilos para la lista de servicios */
+ul {
+    list-style-type: disc; /* Cambia el estilo de viñetas de la lista a puntos */
+    margin-left: 20px; /* Agrega espacio izquierdo entre la lista y el borde de la página */
+}
+
+/* Estilos para la imagen destacada */
+aside img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block; /* Hace que la imagen sea un elemento de bloque */
+    margin: 20px auto; /* Centra la imagen horizontalmente y agrega espacio vertical alrededor de ella */
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #336699; /* Cambia el color de fondo del pie de página a un tono de azul */
+    color: #fff; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra el texto horizontalmente en el pie de página */
+    position: fixed;
+    bottom: 0;
+    height: 7%;
+    width: 100%;
+}
+
+.formulario {
+    text-align: center; /* Centra el contenido horizontalmente en servicios y proyectos */
+}
+
+.container {
+    max-width: 1500px; /* Establece el ancho máximo del contenedor principal */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    padding: 20px; /* Espacio interior del contenedor */
+    background-color: #F2EFE9; /* Color de fondo del contenedor */
+    border-radius: 5px; /* Agrega bordes redondeados al contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra al contenedor */
+    margin-bottom: 60px;    
+}
+
+.input-container {
+    margin-bottom: 20px; /* Margen inferior para separar los elementos del formulario */
+}
+
+label{
+    display: block; /* Hace que las etiquetas ocupen todo el ancho disponible */
+    font-size: 18px; /* Tamaño de fuente para las etiquetas */
+    color: #333; /* Color del texto de las etiquetas */
+    margin-bottom: 10px; /* Margen inferior para separar las etiquetas de los campos de entrada */
+}
+
+ label a{
+    font-size: 18px; /* Tamaño de fuente para las etiquetas */
+    color: #333; /* Color del texto de las etiquetas */
+    margin-bottom: 10px; /* Margen inferior para separar las etiquetas de los campos de entrada */
+}
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: calc(100% - 20px); /* Ajusta el ancho de los campos de entrada restando 20px de relleno */
+    padding: 10px; /* Relleno para los campos de entrada y textarea */
+    font-size: 16px; /* Tamaño de fuente para los campos de entrada y textarea */
+    border: 1px solid #ccc; /* Borde con un color gris claro */
+    border-radius: 5px; /* Bordes redondeados para los campos de entrada y textarea */
+}
+
+textarea {
+    height: 120px; /* Altura predeterminada para el campo de texto grande (textarea) */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Margen derecho para separar los casilleros de verificación */
+    vertical-align: middle; /* Alinea verticalmente los casilleros de verificación con el texto */
+}
+
+button {
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    width: 100%; /* Ancho del botón al 100% */
+    padding: 15px; /* Relleno para el botón */
+    background-color: #336699; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 18px; /* Tamaño de fuente para el botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición de color de fondo al pasar el cursor */
+}
+
+/* Estilos para el contenedor de botones */
+.boton-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Estilos para los Botones */
+.boton {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #0275d8;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.boton:hover {
+    background-color: #234567; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
+button:hover {
+    background-color: #234567; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reducción del relleno para dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+
+    label {
+        font-size: 16px; /* Tamaño de fuente más pequeño para etiquetas en dispositivos móviles */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        font-size: 14px; /* Tamaño de fuente más pequeño para campos de entrada en dispositivos móviles */
+    }
+
+    textarea {
+        height: 100px; /* Altura más pequeña para textarea en dispositivos móviles */
+    }
+
+    button {
+        font-size: 16px; /* Tamaño de fuente más pequeño para botón en dispositivos móviles */
+    }
+}
+

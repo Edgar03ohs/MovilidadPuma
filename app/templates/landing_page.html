@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movilidad Puma</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/estilos.css') }}">
+</head>
+<body>
+  <div class="container">
+      <!-- Encabezado -->
+      <header>
+          <h1>Movilidad Puma</h1>
+          <p>La guía para una movilidad más acertada.</p>
+      </header>
+    
+      <!-- Barra de Navegación -->
+      <nav>
+          <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#acerca">Acerca de</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#mapas">Mapas</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <div class="boton-container">
+            <boton class="boton" id="botonInicioDeSesion">Iniciar Sesión</boton>
+            <boton class="boton" id="botonRegistro">Registrarse</boton>
+          </div>
+      </nav>
+      
+      <main>
+          <div class="caja">
+            <section id="inicio">
+
+          <!-- Imagen Destacada -->
+          <aside>
+              <img src="https://www.la-prensa.com.mx/metropoli/tc4njg-pumabus/alternates/LANDSCAPE_640/PUMABUS" alt="Imagen Destacada">
+          </aside>
+            </section>
+          </div>
+          <div class="caja">
+            <h2>Información de interés</h2>    
+              <ul>
+              <li><p>Lugares cerca de las paradas</p></li>
+
+          <!-- Imagen Destacada -->
+          <aside>
+              <img src="https://img.gruporeforma.com/imagenes/960x640/6/121/5120952.jpg">
+          </aside>
+              <li><p>Otras formas de transporte</p></li>
+
+          <!-- Imagen Destacada -->
+          <aside>
+              <img src="https://scontent.fmex28-1.fna.fbcdn.net/v/t31.18172-8/11187205_803166239732340_7105993237747929783_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7f8c78&_nc_eui2=AeGfjxKbCRGWut7Teez_eaeORhPPbVFNxixGE89tUU3GLO9LpOd3-GJV4hPZa_x4JIhHc3mIZ10WLf58wH7janUM&_nc_ohc=oLxsEybgYCAAX_v6yjB&_nc_ht=scontent.fmex28-1.fna&oh=00_AfAz8NA2cF4QNQBikO0ZcFV7M8mYiIBEvUYKaWi8v6ZxXA&oe=6587A0DF">
+          </aside>
+            </ul>     
+            <section id="acerca">
+              <h2>Acerca de Nosotros</h2>
+              <p>Nuestro objetivo es ayudarte a elegir la opción más conveniente para tu transporte.</p>
+            </section>
+            <section id="servicios">
+              <h2>Nuestros Servicios</h2>
+              <ul>
+                  <li><p>Estado de ocupación de unidades</p></li>
+
+                  <!-- Imagen Destacada -->
+                  <aside>
+              <img src="https://www.calymayor.com.mx/mx/casos_exito/images/pumabus_vista1.jpg" alt="Imagen Destacada">
+          </aside>
+                  <li><p>Ubicación de Pumabús de diferentes rutas</p></li>
+                  
+                <!-- Imagen Destacada -->
+                  <aside>
+              <img src="https://conocecu.files.wordpress.com/2018/11/pumabus_muac_21-e1542785427337.jpg?w=640">
+          </aside>
+              </ul>
+            </section>
+          </div>
+      </main>
+
+      <button id="desktop-button">Vista de Escritorio</button><br>
+      <button id="mobile-button">Vista Móvil</button><br>
+
+    </div>
+    
+    <!-- Pie de Página -->
+    <footer>
+      <section id="contacto">
+        <p>&copy; 2023 Movilidad Puma</p>
+      </section>
+    </footer>
+
+    <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+</body>
+</html>

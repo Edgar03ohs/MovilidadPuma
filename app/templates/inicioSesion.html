@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilos.css') }}">
+</head>
+<body>
+    <!-- <form action="{{ url_for('main.submit_form') }}" method="post">
+    </form>-->
+    
+    <div class="container">
+        <div class="formulario">
+        <h2>Iniciar Sesión</h2>
+        <p>Por favor, ingrese correo y contraseña</p>
+
+        <!-- Inicio del formulario -->
+        <form action="{{ url_for('main.login') }}" method="POST">
+
+          <!-- Campo de Correo Electrónico -->
+          <div>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <!-- Campo de Contraseña -->
+          <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" minlength="8" required>
+          </div><br>
+
+          <!-- Botón de Enviar -->
+          <div>
+            <button type="submit">Enviar</button><br>
+          </div>
+        </form>
+
+        <!-- Fin del formulario -->
+        </div>
+        <button id="desktop-button">Vista de Escritorio</button><br>
+        <button id="mobile-button">Vista Móvil</button>
+    </div>
+    <!-- Pie de Página -->
+    <footer>
+      <section id="contacto">
+        <p>&copy; 2023 Movilidad Puma</p>
+      </section>
+    </footer>
+    
+    <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+</body>
+</html>

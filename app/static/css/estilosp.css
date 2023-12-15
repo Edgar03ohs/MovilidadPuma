@@ -1,0 +1,147 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    margin-bottom: 60px;
+}
+
+h1 {
+    color: #0275d8;
+    text-align: center;
+}
+
+/* Estilos para los Botones */
+.boton {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #0275d8;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #a57102;
+}
+
+/* Estilos para Formularios */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilos para Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+button {
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    width: 100%; /* Ancho del botón al 100% */
+    padding: 15px; /* Relleno para el botón */
+    background-color: #336699; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 18px; /* Tamaño de fuente para el botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición de color de fondo al pasar el cursor */
+}
+
+button:hover {
+    background-color: #234567; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #336699; /* Cambia el color de fondo del pie de página a un tono de azul */
+    color: #fff; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra el texto horizontalmente en el pie de página */
+    position: fixed;
+    bottom: 0;
+    height: 7%;
+    width: 100%;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reducción del relleno para dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+
+    label {
+        font-size: 16px; /* Tamaño de fuente más pequeño para etiquetas en dispositivos móviles */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        font-size: 14px; /* Tamaño de fuente más pequeño para campos de entrada en dispositivos móviles */
+    }
+
+    textarea {
+        height: 100px; /* Altura más pequeña para textarea en dispositivos móviles */
+    }
+
+    button {
+        font-size: 16px; /* Tamaño de fuente más pequeño para botón en dispositivos móviles */
+    }
+}
+
