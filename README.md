@@ -1,7 +1,7 @@
 
 # Proyecto de Movilidad Puma
 
-Este proyecto es una aplicación web creada con Dash y Plotly para visualizar un mapa de calor de criminalidad en la Ciudad de México. Deberás descargar del sitio de datos abiertos de la CdMx el archivo .csv correspondiente que quieras visualizar [Carpetas de investigación FGJ](https://datos.cdmx.gob.mx/dataset/carpetas-de-investigacion-fgj-de-la-ciudad-de-mexico). En este ejemplo usamos los datos correspondientes a Carpetas de Investigación de la FGJ (2023).
+Este proyecto es una aplicación web creada con Flask, SQLite3, HTML y CSS para visualizar una landing page que tiene por objetivo ayudar a la comunidad usuaria del sistema de transporte Pumabús a tener una mejora en su movilidad dento de los espacios universitarios.
 
 ## Configuración
 
@@ -12,7 +12,7 @@ Para comenzar, sigue estos pasos:
 Clona este repositorio a tu máquina local usando:
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git https://github.com/Edgar03ohs/MovilidadPuma.git
 ```
 
 ### 2. Crear un Entorno Virtual
@@ -42,11 +42,6 @@ Instala las dependencias necesarias con:
 ```bash
 pip install -r requirements.txt
 ```
-
-### 4. Configurar Mapbox
-
-Obtén una clave API de Mapbox (token) registrándote en [Mapbox](https://www.mapbox.com/). Asegúrate de no subir tu clave API a tu repositorio.
-
 ### 5. Ejecutar la Aplicación
 
 Para ejecutar la aplicación, usa:
@@ -57,8 +52,8 @@ python app.py
 
 ## Uso
 
-Abre tu navegador y dirígete a `http://127.0.0.1:8050/` para ver la aplicación.
+Abre tu navegador y dirígete a `http://127.0.0.1:5000/` para ver la aplicación.
 
 ## Contribuir
 
-Para contribuir al proyecto, asegúrate de no subir tu entorno virtual o tu clave API de Mapbox.
+Para contribuir al proyecto, asegúrate de no subir tu entorno virtual o alguna clave API.
