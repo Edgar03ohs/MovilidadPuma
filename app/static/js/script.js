@@ -6,13 +6,26 @@
         window.location.href='/inicioSesion';
     }) */
 
-// JavaScript para cambiar la vista al hacer clic en los botones
+// const vistaActual = localStorage.getItem('vista') || 'escritorio';
+
+// // JavaScript para cambiar la vista al hacer clic en los botones
+
+// // Aplicar estilos o clases según la vista actual
+// if (vistaActual === 'movil') {
+//     // Aplicar estilos para la vista de móvil
+//     document.body.classList.add('vista-movil');
+// } else {
+//     // Aplicar estilos para la vista de escritorio
+//     document.body.classList.remove('vista-movil');
+// }
+
 
 // Obtiene una referencia al botón de "Vista de Escritorio" por su ID
 const desktopButton = document.getElementById("desktop-button");
 
 // Obtiene una referencia al botón de "Vista Móvil" por su ID
 const mobileButton = document.getElementById("mobile-button");
+
 
 
 // Obtiene una referencia al botón de "Iniciar Sesion" por su ID
@@ -42,9 +55,13 @@ desktopButton.addEventListener("click", () => {
     container.style.maxWidth = "1500px";
 });
 
+
 // Agrega un evento de clic al botón de "Vista Móvil"
 mobileButton.addEventListener("click", () => {
     // Cambia el estilo del contenedor para ajustar la vista móvil
+    
+    // localStorage.setItem('vista', 'movil');
+
     container.style.maxWidth = "360px";
 });
 

@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 #pip install SQLAlchemy
 #pip install flask-sqlalchemy
@@ -8,7 +8,7 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
 
-    app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///datos.db'
+    app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///usuarios.db'
 
     db.init_app(app)
 
