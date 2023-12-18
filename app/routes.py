@@ -16,6 +16,10 @@ def landing_page():
 #def index():
 #    return render_template('index.html')
 
+@main.route('/mapas')
+def mapas():
+    return render_template('mapas.html')
+
 @main.route('/formulario')
 def formulario():
     return render_template('formulario.html')
