@@ -8,6 +8,26 @@
 </head>
 <body>
     <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <h1>Movilidad Puma</h1>
+            <p>La guía para una movilidad más acertada.</p>
+        </header>
+      
+        <!-- Barra de Navegación -->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('main.landing_page') }}">Inicio</a></li>
+                <li><a href="{{ url_for('main.landing_page') }}#acerca">Acerca de</a></li>
+                <li><a href="{{ url_for('main.landing_page') }}#servicios">Servicios</a></li>
+                <li><a href="{{ url_for('main.mapas') }}">Mapas</a></li>                
+                <li><a href="{{ url_for('main.landing_page') }}#contacto">Contacto</a></li>
+            </ul>
+            <div class="boton-container">
+              <boton class="boton" id="botonInicioDeSesion">Iniciar Sesión</boton>
+              <boton class="boton" id="botonRegistro">Registrarse</boton>
+            </div>
+        </nav>
         <main>
             <div class="caja">
 

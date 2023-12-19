@@ -8,20 +8,38 @@
 </head>
 <body>
     <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <h1>Movilidad Puma</h1>
+            <p>La guía para una movilidad más acertada.</p>
+        </header>
+      
+        <!-- Barra de Navegación -->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('main.landing_page') }}">Inicio</a></li>
+                <li><a href="{{ url_for('main.landing_page') }}#acerca">Acerca de</a></li>
+                <li><a href="{{ url_for('main.landing_page') }}#servicios">Servicios</a></li>
+                <li><a href="{{ url_for('main.mapas') }}">Mapas</a></li>                
+                <li><a href="{{ url_for('main.landing_page') }}#contacto">Contacto</a></li>
+            </ul>
+            <div class="boton-container">
+              <boton class="boton" id="botonInicioDeSesion">Iniciar Sesión</boton>
+              <boton class="boton" id="botonRegistro">Registrarse</boton>
+            </div>
+        </nav>
         <h1>Registros Guardados:</h1>
-        <ul>
+        <g><ul>
             <!-- Jinja2 -->
             {% for Usuarios in personas %}
             <li>{{Usuarios.nombre}} {{Usuarios.apellido}}  -  {{Usuarios.email}}</li>
             {% endfor %}
-        </ul>
+        </ul></g>
         
         <a href="{{ url_for('main.landing_page') }}" class="boton" >Inicio</a>
 
         <button id="desktop-button">Vista de Escritorio</button><br>
         <button id="mobile-button">Vista Móvil</button>
-    </div>
-
         <!-- Pie de Página -->
         <footer>
             <section id="contacto">
