@@ -75,7 +75,7 @@ window.addEventListener("resize", () => {
         // navElement.style.alignItems = 'center';
         // navElement.style.height = 'auto';
         // navulElement.style.width= '65%';
-        navElement.style.flexDirection = "inline";
+        //navElement.style.flexDirection = "inline";
         }
     }
 });
@@ -90,17 +90,18 @@ desktopButton.addEventListener("click", () => {
 
     navElement.style.alignItems = 'center';
     navElement.style.flexDirection = "inline";
-    navElement.style.display = 'flex';
+    navElement.style.flexDirection = 'row';
+    // navElement.style.display = 'flex';
     navElement.style.justifyContent = 'space-between';
     navElement.style.padding = '0';
-    navElement.style.height = 'auto';
+    // navElement.style.height = 'auto';
 
     navulElement.style.listStyleType = 'none';
     navulElement.style.margin = '0';
     navulElement.style.padding = '0';
     navulElement.style.height = '100%';
-    // navulElement.style.width= '65%';
     navulElement.style.display = 'flex';
+    navulElement.style.width = '65%';
 
     // navulliElement.style.position = 'relative';
     // navulliElement.style.width = '100%';
@@ -129,11 +130,12 @@ desktopButton.addEventListener("click", () => {
     // container.style.marginBottom = '60px';    
     // container.style.padding = '20px';
 
-    // botonContainerElement.style.alignItems = 'center';
-    // botonContainerElement.style.paddingBottom = '5px';
-    // botonContainerElement.style.paddingTop = '5px';
-    // botonContainerElement.style.display = 'flex';
-    // botonContainerElement.style.gap= '0px'; /* Espacio entre los botones */
+    botonContainerElement.style.alignItems = 'center';
+    botonContainerElement.style.paddingBottom = '5px';
+    botonContainerElement.style.paddingTop = '5px';
+    botonContainerElement.style.display = 'flex';
+    botonContainerElement.style.flexDirection = 'row';
+    botonContainerElement.style.gap= '0px'; /* Espacio entre los botones */
 
     // botonElement.style.display = 'inline-block';
     // botonElement.style.marginRight = '7px';
