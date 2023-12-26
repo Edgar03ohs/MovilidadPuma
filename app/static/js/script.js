@@ -6,11 +6,9 @@
         window.location.href='/inicioSesion';
     }) */
 
-// const vistaActual = localStorage.getItem('vista') || 'escritorio';
+const vistaActual = localStorage.getItem('vista') || 'escritorio';
 
-// // JavaScript para cambiar la vista al hacer clic en los botones
-
-// // Aplicar estilos o clases según la vista actual
+// Aplicar estilos o clases según la vista actual
 // if (vistaActual === 'movil') {
 //     // Aplicar estilos para la vista de móvil
 //     document.body.classList.add('vista-movil');
@@ -62,7 +60,6 @@ const botonElement = document.querySelector('.boton');
 const buttonElement = document.querySelector('button');
 
 vistaTipo = 0;
-
 // Obtiene una referencia al contenedor principal por su clase CSS
 const container = document.querySelector(".container");
 window.addEventListener("resize", () => {
@@ -335,6 +332,23 @@ mobileButton.addEventListener("click", () => {
 
     // buttonElement.style.fontSize = '16px'; /* Tamaño de fuente más pequeño para botón en dispositivos móviles */
 });
+
+
+mobileButton.addEventListener("click", () => {
+    container.style.maxWidth = "360px";    
+    navElement.style.height = 'auto';
+    navElement.style.flexDirection = 'column';
+    navElement.style.alignItems = 'center';
+    navulElement.style.listStyleType = 'none';
+    navulElement.style.margin = '0';
+    navulElement.style.padding = '0';
+    navulElement.style.height = '60px%';
+    navulElement.style.width= '100%';
+    navulElement.style.display = 'flex';
+    h1Element.style.fontSize = '30px'; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    labelElement.style.fontSize = '12px'; /* Tamaño de fuente más pequeño para etiquetas en dispositivos móviles */
+});
+
 
 // Agrega un evento de clic al botón de "Iniciar Sesion"
 botonInicioDeSesion.addEventListener("click", () => {
