@@ -61,22 +61,42 @@ const botonElement = document.querySelector('.boton');
 // Obtener el elemento button
 const buttonElement = document.querySelector('button');
 
-
+vistaTipo = 0;
 
 // Obtiene una referencia al contenedor principal por su clase CSS
 const container = document.querySelector(".container");
 window.addEventListener("resize", () => {
+    navulElement.style.height = '60px';
+    navElement.style.height = 'auto';
     // Verifica el ancho de la ventana y ajusta el estilo del contenedor en consecuencia
-    if (window.innerWidth <= 767) {
-        container.style.maxWidth = "360px";
+    if (window.innerWidth <= 800) {
+        navElement.style.flexDirection = 'column';
+        navElement.style.height = 'auto';
+        botonContainerElement.style.width= '95%'; 
+        navulElement.style.width= '100%'; 
+        if (window.innerWidth <= 640) {
+            if(vistaTipo == 1){
+            container.style.maxWidth = "360px";
+            }else{
+                botonContainerElement.style.width= '65%'; 
+            }
+        }
     } else {
+        // if(vistaTipo ==0){
         container.style.maxWidth = "1500px";
+        botonContainerElement.style.width= '95%';
         if(window.innerWidth >= 800) {
+            botonContainerElement.style.width = 'auto';
+            navElement.style.height = '60px';
+            navElement.style.justifyContent = 'space-between';
+            navElement.style.flexDirection = 'row';
+            navulElement.style.width= '65%';
+            navulElement.style.height= navElement.style.height;
         // navElement.style.alignItems = 'center';
         // navElement.style.height = 'auto';
-        // navulElement.style.width= '65%';
         //navElement.style.flexDirection = "inline";
-        }
+        // }
+    }
     }
 });
 
@@ -85,23 +105,132 @@ window.dispatchEvent(new Event('resize'));
 
 // Agrega un evento de clic al botón de "Vista de Escritorio"
 desktopButton.addEventListener("click", () => {
+    
+    vistaTipo = 0;
+
+    h1Element.style.fontSize = '36px';
+    h1Element.style.margin = '0';
+
     // Cambia el estilo del contenedor para ajustar la vista de escritorio
     container.style.maxWidth = "1500px";
+    if (window.innerWidth <= 767) {
+        // navElement.style.alignItems = 'center'; 
+        
+        navulElement.style.height = '60px';
+    
+        navElement.style.flexDirection = "column";
+        navElement.style.height = 'auto';
+        navElement.style.alignItems = 'center';
+        navElement.style.justifyContent = 'space-between';
+        navElement.style.padding = '0';
+
+        navulElement.style.width = '100%';
+        navulElement.style.listStyleType = 'none';
+        navulElement.style.margin = '0';
+        navulElement.style.padding = '0';
+        navulElement.style.display = 'flex';
+        // navulElement.style.backgroundColor = 'green';
+
+        botonContainerElement.style.alignItems = 'center';
+        botonContainerElement.style.paddingBottom = '5px';
+        botonContainerElement.style.paddingTop = '5px';
+        botonContainerElement.style.display = 'flex';
+        botonContainerElement.style.flexDirection = 'row';
+        if (window.innerWidth <= 640) {
+        botonContainerElement.style.width= '65%'; 
+        }
+        botonContainerElement.style.gap= '10px'; /* Espacio entre los botones */
+
+        // navulliElement.style.position = 'relative';
+        // navulliElement.style.alignItems = 'center';
+        // navulliElement.style.width = '100%';
+        // navulliElement.style.display = 'flex';
+
+        // navulliaElement.style.margin = '0 auto';
+        // navulliaElement.style.textDecoration = 'none';
+        // navulliaElement.style.alignItems = 'center';
+        // navulliaElement.style.height = '100%';
+        // navulliaElement.style.width = '100%';
+        // navulliaElement.style.display = 'flex';
+
+
+    }else if(window.innerWidth >= 800){
+        navElement.style.alignItems = 'center';
+        navElement.style.flexDirection = "inline";
+        navElement.style.flexDirection = 'row';
+        navElement.style.justifyContent = 'space-between';
+        navElement.style.padding = '0';
+        
+        navulElement.style.listStyleType = 'none';
+        navulElement.style.margin = '0';
+        navulElement.style.padding = '0';
+        navulElement.style.height = '100%';
+        navulElement.style.display = 'flex';
+        navulElement.style.width = '65%';
+        
+        botonContainerElement.style.flexDirection = 'row';
+        
+        navElement.style.height = '60px';
+    }
 
     navElement.style.alignItems = 'center';
     navElement.style.flexDirection = "inline";
-    navElement.style.flexDirection = 'row';
-    // navElement.style.display = 'flex';
     navElement.style.justifyContent = 'space-between';
     navElement.style.padding = '0';
     // navElement.style.height = 'auto';
+    // navElement.style.display = 'flex';
 
     navulElement.style.listStyleType = 'none';
     navulElement.style.margin = '0';
     navulElement.style.padding = '0';
-    navulElement.style.height = '100%';
     navulElement.style.display = 'flex';
-    navulElement.style.width = '65%';
+
+    botonContainerElement.style.alignItems = 'center';
+    botonContainerElement.style.paddingBottom = '5px';
+    botonContainerElement.style.paddingTop = '5px';
+    botonContainerElement.style.display = 'flex';
+    botonContainerElement.style.flexDirection = 'row';
+
+    labelElement.style.fontSize = '18px'; 
+    labelElement.style.display = 'block'; /* Hace que las etiquetas ocupen todo el ancho disponible */
+    labelElement.style.color = '#333'; /* Color del texto de las etiquetas */
+    labelElement.style.marginBottom = '10px'; /* Margen inferior para separar las etiquetas de los campos de entrada */
+
+    h1Element.style.fontSize = '36px';
+    h1Element.style.margin = '0';
+
+    window.addEventListener("resize", () => {
+
+        // Verifica el ancho de la ventana y ajusta el estilo del contenedor en consecuencia
+        if (window.innerWidth <= 800) {
+            // navElement.style.alignItems = 'center';
+            navElement.style.flexDirection = "column";
+            botonContainerElement.flexDirection = 'row';
+            navulElement.style.width = '100%';
+            navulElement.style.height = navElement.style.height;
+            navElement.style.height = 'auto';
+            
+        }else if(window.innerWidth >= 800){
+            navElement.style.alignItems = 'center';
+            navElement.style.height = 'auto';
+            navElement.style.flexDirection = "inline";
+            navElement.style.flexDirection = 'row';
+            navElement.style.justifyContent = 'space-between';
+            navElement.style.padding = '0';
+            
+            navulElement.style.listStyleType = 'none';
+            navulElement.style.margin = '0';
+            navulElement.style.padding = '0';
+            navulElement.style.height = navElement.style.height;
+            navulElement.style.display = 'flex';
+            navulElement.style.width = '65%';
+            
+            botonContainerElement.flexDirection = 'row';
+            
+            navElement.style.height = '60px';
+            
+        }
+    });
 
     // navulliElement.style.position = 'relative';
     // navulliElement.style.width = '100%';
@@ -115,27 +244,12 @@ desktopButton.addEventListener("click", () => {
     // navulliaElement.style.width = '100%';
     // navulliaElement.style.margin = '0 auto';
 
-    labelElement.style.fontSize = '18px'; /* Tamaño de fuente más pequeño para etiquetas en dispositivos móviles */
-    labelElement .style.display = 'block'; /* Hace que las etiquetas ocupen todo el ancho disponible */
-    labelElement.style.color = '#333'; /* Color del texto de las etiquetas */
-    labelElement.style.marginBottom = '10px'; /* Margen inferior para separar las etiquetas de los campos de entrada */
-
-    h1Element.style.fontSize = '36px';
-    h1Element.style.margin = '0';
-
     // container.style.maxWidth = '1500px'; /* Establece el ancho máximo del contenedor principal */
     // container.style.margin = '0 auto'; /* Centra el contenedor horizontalmente en la página */
     // container.style.borderRadius = '5px'; /* Agrega bordes redondeados al contenedor */
     // container.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.2)'; /* Agrega una sombra al contenedor */
     // container.style.marginBottom = '60px';    
     // container.style.padding = '20px';
-
-    botonContainerElement.style.alignItems = 'center';
-    botonContainerElement.style.paddingBottom = '5px';
-    botonContainerElement.style.paddingTop = '5px';
-    botonContainerElement.style.display = 'flex';
-    botonContainerElement.style.flexDirection = 'row';
-    botonContainerElement.style.gap= '0px'; /* Espacio entre los botones */
 
     // botonElement.style.display = 'inline-block';
     // botonElement.style.marginRight = '7px';
@@ -164,6 +278,9 @@ desktopButton.addEventListener("click", () => {
 });
 // Agrega un evento de clic al botón de "Vista Móvil"
 mobileButton.addEventListener("click", () => {
+
+    vistaTipo = 1;
+
     // Cambia el estilo del contenedor para ajustar la vista móvil
     container.style.maxWidth = "360px";    
 
@@ -184,7 +301,7 @@ mobileButton.addEventListener("click", () => {
     navulElement.style.listStyleType = 'none';
     navulElement.style.margin = '0';
     navulElement.style.padding = '0';
-    navulElement.style.height = '100%';
+    navulElement.style.height = '60px%';
     navulElement.style.width= '100%';
     navulElement.style.display = 'flex';
     

@@ -231,8 +231,9 @@ button {
     padding-bottom: 5px;
     padding-top: 5px;
     display: flex;
-    gap: 0px; /* Espacio entre los botones */
+    gap: 10px; /* Espacio entre los botones */
     align-items: center;
+    /* background-color: #FFD700; */
 }
 
 /* Estilos para los Botones */
@@ -299,8 +300,14 @@ button:hover {
     }
 
     .boton-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        gap: 10px;
+        width: 95%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
         margin-bottom: 15px; /* Ajusta según sea necesario */
     }
 
@@ -308,10 +315,6 @@ button:hover {
         width: 100%; /* O ajusta según sea necesario */
         margin: 0px; /* Ajusta según sea necesario */
         margin-bottom: 5px;
-    }
-
-    h1 {
-        font-size: 30px; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
 
     label {
